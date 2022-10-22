@@ -8,18 +8,18 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
-        app:cardBackgroundColor="@color/dashboard_item_4"
+        app:cardBackgroundColor="@color/background"
         app:cardCornerRadius="@dimen/_14sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_8sdp"
-            android:src="@drawable/ic_movie"
-            app:tint="@color/white"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quentin"
+
+            />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -40,7 +40,8 @@
             android:paddingLeft="@dimen/_40sdp"
             android:paddingTop="@dimen/_16sdp"
             android:paddingRight="@dimen/_16sdp"
-            android:paddingBottom="@dimen/_16sdp">
+            android:paddingBottom="@dimen/_16sdp"
+            android:background="@drawable/layout_border">>
 
             <TextView
                 android:id="@+id/textAmount"
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_marginRight="@dimen/_8sdp"
-                android:text="Evento de videojuegos"
+                android:text="Evento de peliculas"
                 android:textColor="@color/primary_text"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintEnd_toStartOf="@id/textAmount"

@@ -47,7 +47,7 @@
 
 
 
-            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -56,15 +56,8 @@
             android:layout_height="wrap_content">
             <TextView
                 android:gravity="center"
-                android:text="Tu"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textStyle="normal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:gravity="center"
-                android:text="Perfil"
+                android:text="Tus eventos"
+                android:layout_marginTop="30dp"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -74,15 +67,7 @@
 
     </LinearLayout>
 
-    <include
 
-        android:id="@+id/include"
-        layout="@layout/item_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="4dp"
-        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -92,13 +77,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
 
-            <include layout="@layout/item_info" />
-            <include layout="@layout/item_add" />
             <include layout="@layout/item_event"/>
             <include layout="@layout/item_event"/>
             <include layout="@layout/item_event"/>
+            <include layout="@layout/item_event"/>
+            <include layout="@layout/item_event"/>
+            <include layout="@layout/item_event"/>
+            <include layout="@layout/item_event"/>
+            <include layout="@layout/item_event"/>
+
 
 
 

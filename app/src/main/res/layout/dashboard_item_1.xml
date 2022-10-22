@@ -2,7 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp"
+    >
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="@dimen/_50sdp"
@@ -11,14 +17,14 @@
         app:cardCornerRadius="@dimen/_14sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/layout_border">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/_8sdp"
-            android:src="@drawable/ic_esports"
-            app:tint="@color/white"/>
+            android:src="@drawable/c10e1d87ce82be0d0cad638d485ea6621d5c8993dc78beb5f18463cab01382a1_thumb"
+            />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -39,7 +45,8 @@
             android:paddingLeft="@dimen/_40sdp"
             android:paddingTop="@dimen/_16sdp"
             android:paddingRight="@dimen/_16sdp"
-            android:paddingBottom="@dimen/_16sdp">
+            android:paddingBottom="@dimen/_16sdp"
+            android:background="@drawable/layout_border">
 
             <TextView
                 android:id="@+id/textAmount"

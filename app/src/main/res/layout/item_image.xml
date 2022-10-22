@@ -10,75 +10,92 @@
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="250dp">
+
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
             android:layout_marginTop="40dp"
+            app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true"
-            card_view:cardCornerRadius="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="240dp">
+            card_view:cardCornerRadius="5dp">
+            <ImageView
+                android:padding="1dp"
+                android:paddingLeft="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
             <LinearLayout
-                android:orientation="vertical"
-                android:layout_marginTop="23dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="23dp"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
+                    android:gravity="center"
                     android:text="Nombre de usuario"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:textStyle="bold" />
 
                 <View
-                    android:background="#79D6D1D1"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"/>
+                    android:layout_height="1dp"
+                    android:background="#79D6D1D1" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:weightSum="3"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
                     <TextView
-                        android:layout_weight="1"
-                        android:text="Informacion del usuario"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Informacion del usuario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
                     <View
-                        android:background="#79D6D1D1"
                         android:layout_width="1dp"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:background="#79D6D1D1" />
+
                     <TextView
-                        android:layout_weight="1"
-                        android:text="Informacion del usuario"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Informacion del usuario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
                     <View
-                        android:background="#79D6D1D1"
                         android:layout_width="1dp"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:background="#79D6D1D1" />
+
                     <TextView
-                        android:layout_weight="1"
-                        android:text="Informacion del usuario"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textSize="14sp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Informacion del usuario"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
                     <View
-                        android:background="#79D6D1D1"
                         android:layout_width="1dp"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:background="#79D6D1D1" />
 
                 </LinearLayout>
 
@@ -89,7 +106,7 @@
     </RelativeLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:src="@drawable/slider"
+        android:src="@drawable/c10e1d87ce82be0d0cad638d485ea6621d5c8993dc78beb5f18463cab01382a1_thumb"
         app:shapeAppearanceOverlay="@style/Circular"
         android:elevation="15dp"
         android:padding="5dp"
