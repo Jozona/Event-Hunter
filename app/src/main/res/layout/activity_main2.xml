@@ -14,6 +14,7 @@
         android:background="@color/primary"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
+
     <View
         android:id="@+id/view2"
         android:layout_width="0dp"
@@ -26,22 +27,21 @@
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
         android:text="Inicio"
         android:textColor="#000000"
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/appCompatImageView"
-        android:layout_width="@dimen/_26sdp"
-        android:layout_height="@dimen/_26sdp"
+        android:layout_width="41dp"
+        android:layout_height="44dp"
         android:layout_marginEnd="@dimen/_16sdp"
         android:src="@drawable/ic_person"
         app:layout_constraintBottom_toBottomOf="@+id/textTitle"
@@ -51,15 +51,32 @@
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="@dimen/_26sdp"
-        android:layout_height="@dimen/_26sdp"
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="8dp"
         android:src="@drawable/ic_info"
         app:layout_constraintBottom_toBottomOf="@+id/textTitle"
         app:layout_constraintEnd_toStartOf="@+id/appCompatImageView"
         app:layout_constraintTop_toTopOf="@+id/textTitle"
         app:layout_constraintVertical_bias="0.0"
-        android:layout_marginRight="8dp"
         app:tint="#000000" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="107dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#00000F"
+        android:drawableStart="@drawable/ic_baseline_edit_24"
+        android:drawableTint="@color/white"
+        android:text="Nuevo"
+        app:cornerRadius="?attr/listPreferredItemPaddingEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/textTitle"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatImageView2"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/textTitle"
+        app:layout_constraintTop_toTopOf="@+id/textTitle" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardHeader"
@@ -75,16 +92,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/_6sdp">
-                <EditText
-                    android:id="@+id/textViews"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/primary_text"
-                    android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold"
-                    android:hint="Buscar eventos..."
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/textViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Buscar eventos..."
+                android:minHeight="48dp"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
